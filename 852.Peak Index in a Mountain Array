@@ -6,7 +6,7 @@ public:
         int e = n-1;
         int mid = s+(e-s)/2;
 
-        while(s<e){
+        while(s<e){ //s<=e is not acceptable due to infinite loop
             if(arr[mid]<arr[mid+1]){
                 //A part
                 s=mid+1;//go to the right 
