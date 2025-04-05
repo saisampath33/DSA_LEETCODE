@@ -5,12 +5,11 @@ public:
             vec.push_back(st);
             return;
         }
-
-        // Include nums[index]
+        //pick
         st.push_back(nums[index]);
         lcs(nums, st, index + 1, vec);
 
-        // Exclude nums[index]
+       //nonpick
         st.pop_back();
         lcs(nums, st, index + 1, vec);
     }
